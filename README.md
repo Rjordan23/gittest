@@ -1,1 +1,1 @@
-# gittest
+This project will be of a fictitious company's website inspired by either a design from dribbble.com, Nordstrom, or another trendy site. Once the design is completed I may try to add an open cart to this site.
