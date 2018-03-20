@@ -80,23 +80,10 @@
 
 /* //// Main Area //// */
 #main-area {
-    background: green;
-    height: 1000px;
+    height: 950px;
+    position: relative;
 }
 
-.main-area-section {
-    width: 50%;
-    height: 800px;
-    float: left;
-    background: red;
-}
-
-.main-area-section #left {
-    background: url('img/bg1.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    /* width: 100%; */
-    height: 700px;
-
+#main-area img {
+    width: 40%;
 }
