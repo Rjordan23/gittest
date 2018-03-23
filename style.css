@@ -7,8 +7,9 @@
 }
 
 .right {
-    width: 80%;
+    width: 79%;
     float: right;
+    /* margin-left: 19%; */
     z-index: 0;
 }
 
@@ -17,13 +18,11 @@
 #left-nav {
     height: 100vh;
     min-height: 800px;
-    width: 20vw;
-    min-width: 20%;
+    width: 21%;
     position: fixed;
-    box-shadow: 1px 0 2px 1px rgba(0, 0, 0, .5);
+    box-shadow: 1px 0 5px .5px rgba(0, 0, 0, .5);
     display: block;
     z-index: 1;
-    background-color: #fff;
 }
 
 #left-nav ul li {
@@ -60,11 +59,12 @@
 
 /* //// Hero Image Section //// */
 #header-img {
-    background-image: url('img/hero-img.jpeg');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    height: 500px;
-    transform: scaleX(-1);
+    background-image: url('img/banner1.jpeg');
+    background-position-y: 80%;
+    background-size: cover;
+    /* background-repeat: no-repeat;  */
+    height: 400px;
+
 }
 
 /* //// Welcome Text Section //// */
@@ -76,14 +76,42 @@
 #welcome h1 {
     font-size: 2.8rem;
     padding-bottom: 15px;
+    color: rgb(209, 77, 95);
 }
 
 /* //// Main Area //// */
 #main-area {
-    height: 950px;
+    height: 1000px;
     position: relative;
 }
 
-#main-area img {
+/* Woman in red Dress */
+#main-area  .model-img {
+    position: absolute;
+    left: 5%;
+    background-image: url('img/bg1.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 90%;
     width: 40%;
 }
+
+/* Retro van image */
+#main-area .retro-truck {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    width: 40%;
+    height: 20%;
+    background-image: linear-gradient( rgba(209, 77, 95, .6), rgba(255, 93, 115, .6)),url('img/pattern2.jpg');
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#main-area .retro-truck h2 {
+    padding-top: 50px;
+}
+
