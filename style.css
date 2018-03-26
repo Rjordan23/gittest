@@ -4,19 +4,25 @@
     border-style: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: Helvetica Neue, Helvetica;
 }
 
 .right {
     width: 79%;
     float: right;
-    /* margin-left: 19%; */
     z-index: 0;
+}
+
+.title-text {
+    font-size: 46px;
+    color: #FF5D73;
+    margin-bottom: 10px;
 }
 
 
 /* //// Left Navigation Section //// */
 #left-nav {
-    height: 100vh;
+    height: 100%;
     min-height: 800px;
     width: 21%;
     position: fixed;
@@ -62,9 +68,7 @@
     background-image: url('img/banner1.jpeg');
     background-position-y: 80%;
     background-size: cover;
-    /* background-repeat: no-repeat;  */
     height: 400px;
-
 }
 
 /* //// Welcome Text Section //// */
@@ -73,11 +77,6 @@
     text-align: center;
 }
 
-#welcome h1 {
-    font-size: 2.8rem;
-    padding-bottom: 15px;
-    color: rgb(209, 77, 95);
-}
 
 /* //// Main Area //// */
 #main-area {
@@ -85,25 +84,28 @@
     position: relative;
 }
 
+
 /* Woman in red Dress */
-#main-area  .model-img {
+#main-area .model-img-fmale {
     position: absolute;
     left: 5%;
     background-image: url('img/bg1.jpeg');
-    background-size: contain;
+    background-position: bottom center;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 90%;
+    height: 73%;
     width: 40%;
 }
 
-/* Retro van image */
-#main-area .retro-truck {
+
+/* //////////////// */
+#main-area .specials {
     position: absolute;
     left: 5%;
     bottom: 5%;
     width: 40%;
     height: 20%;
-    background-image: linear-gradient( rgba(209, 77, 95, .6), rgba(255, 93, 115, .6)),url('img/pattern2.jpg');
+    background-image: linear-gradient( rgba(161, 210, 206, .5), rgba(161, 210, 206, .6)),url('img/pattern2.jpg');
     background-size: contain;
     background-position: center;
     text-align: center;
@@ -111,7 +113,102 @@
     font-size: 30px;
 }
 
-#main-area .retro-truck h2 {
+#main-area .specials h2 {
     padding-top: 50px;
 }
 
+/* ////////////// */
+#main-area .specials:nth-of-type(2) {
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+#main-area .model-img-male {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    background-image: url('img/bg3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 73%;
+    width: 40%;
+}
+
+/* ///// Info Section Top //// */
+#info-top {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+
+#info-top p:nth-of-type(1) {
+    
+}
+
+#info-top p:nth-of-type(2) {
+    padding-top: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* //// Info Section Bottom //// */
+#info-btm {
+    height: 240px;
+    background-image: linear-gradient( rgba(209, 77, 95, .6), rgba(255, 93, 115, .6)),url('img/pattern2.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0 0 0;
+}
+
+#info-btm .box {
+    text-align: center;
+    width: 33.3%;
+    height: 100%;
+    color: #ffffff;
+    float: left;
+    margin: auto;
+}
+
+#info-btm .box .fa-user-circle, #info-btm .box .fa-tags, #info-btm .box .fa-dolly-flatbed {
+    font-size: 4rem;
+}
+
+#info-btm .box h3 {
+    margin: 10px 0 10px 0;
+}
+
+#info-btm .box p {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.3rem;
+}
+
+
+/* ///////////// */
+#contact {
+    background-image: linear-gradient( rgba(209, 77, 95, .6), rgba(255, 93, 115, .6)),url('img/pattern2.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#contact .form-control {
+    width: 350px;
+    margin: 10px 0 10px 0;
+    font-size: 12px;
+    border-radius: 3px;
+    border: 1px solid #BCBCBC;
+    padding-left: 5px;
+}
+
+#contact .txt-box {
+  height: 40px;
+}
+
+#contact .msg-box {
+    padding: 10px 0 0 10px;
+}
